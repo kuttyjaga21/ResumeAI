@@ -1,0 +1,2722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeAI — AI Career Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+
+<style>
+.resume-md-name {
+    margin: 0 0 18px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.resume-md-section {
+    margin: 26px 0 10px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.resume-md-subsection {
+    margin: 16px 0 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.resume-md-paragraph {
+    margin: 7px 0;
+}
+
+#rewrittenResumeText ul {
+    margin: 6px 0 12px;
+    padding-left: 22px;
+}
+
+#rewrittenResumeText li {
+    margin: 5px 0;
+    padding-left: 3px;
+}
+
+#rewrittenResumeText strong {
+    font-weight: 700;
+}
+
+#rewrittenResumeText a {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                ✦
+            </div>
+
+            <div>
+                <div class="brand-name">
+                    ResumeAI
+                </div>
+
+                <div class="brand-subtitle">
+                    CAREER INTELLIGENCE
+                </div>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <div class="nav-label">
+                WORKSPACE
+            </div>
+
+            <a href="#" class="nav-item active">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#resumeAnalysis" class="nav-item">
+                <span class="nav-icon">◈</span>
+                <span>Resume Analysis</span>
+            </a>
+
+            <a href="#jobMatcher" class="nav-item">
+                <span class="nav-icon">◎</span>
+                <span>Job Matcher</span>
+            </a>
+
+            <a href="#aiInsights" class="nav-item">
+                <span class="nav-icon">✦</span>
+                <span>AI Insights</span>
+            </a>
+
+            <a href="#resumeRewrite" class="nav-item">
+                <span class="nav-icon">✎</span>
+                <span>Resume Rewrite</span>
+            </a>
+
+            <a href="#coverLetter" class="nav-item">
+                <span class="nav-icon">✉</span>
+                <span>Cover Letter</span>
+            </a>
+
+            <a href="#resumeHistory" class="nav-item">
+                <span class="nav-icon">◷</span>
+                <span>Resume History</span>
+            </a>
+
+
+            <div class="nav-label nav-label-spaced">
+                RESOURCES
+            </div>
+
+            <a href="#skillsSection" class="nav-item">
+                <span class="nav-icon">◇</span>
+                <span>Skills</span>
+            </a>
+
+            <a href="#recommendations" class="nav-item">
+                <span class="nav-icon">↗</span>
+                <span>Recommendations</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="pro-card">
+
+                <div class="pro-glow"></div>
+
+                <div class="pro-icon">
+                    ✦
+                </div>
+
+                <div class="pro-title">
+                    AI Career Engine
+                </div>
+
+                <div class="pro-text">
+                    Powered by intelligent resume analysis.
+                </div>
+
+                <div class="pro-status">
+                    <span></span>
+                    AI ENGINE ONLINE
+                </div>
+
+            </div>
+
+            <div class="sidebar-footer">
+                ResumeAI v1.0
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main-content">
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+            <div class="mobile-brand">
+                <span>✦</span>
+                ResumeAI
+            </div>
+
+            <div class="topbar-search">
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Search your workspace..."
+                >
+
+                <span class="search-shortcut">
+                    ⌘ K
+                </span>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button
+                    class="icon-button"
+                    title="Notifications"
+                >
+                    ◌
+                </button>
+
+                <div class="profile">
+
+                    <div class="profile-avatar">
+                        J
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong>
+                            Jagadeesh
+                        </strong>
+
+                        <span>
+                            ECE • Candidate
+                        </span>
+
+                    </div>
+
+                    <span class="profile-arrow">
+                        ˅
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             DASHBOARD CONTENT
+        ================================================== -->
+
+        <div class="dashboard">
+
+            <!-- =================================================
+                 HERO
+            ================================================== -->
+
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        AI CAREER INTELLIGENCE
+                    </div>
+
+                    <h1>
+                        Turn your resume into
+                        <span>career intelligence.</span>
+                    </h1>
+
+                    <p>
+                        Analyze your resume, discover skill gaps,
+                        match job descriptions and get personalized
+                        AI-powered recommendations.
+                    </p>
+
+                    <div class="hero-meta">
+
+                        <div class="hero-meta-item">
+                            <span class="meta-icon">✦</span>
+                            Real-time AI analysis
+                        </div>
+
+                        <div class="hero-meta-item">
+                            <span class="meta-icon">◈</span>
+                            ATS optimization
+                        </div>
+
+                        <div class="hero-meta-item">
+                            <span class="meta-icon">◎</span>
+                            Job matching
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="hero-orbit orbit-one"></div>
+                    <div class="hero-orbit orbit-two"></div>
+                    <div class="hero-orbit orbit-three"></div>
+
+                    <div class="hero-core">
+                        <span>✦</span>
+                    </div>
+
+                    <div class="hero-particle particle-one"></div>
+                    <div class="hero-particle particle-two"></div>
+                    <div class="hero-particle particle-three"></div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 KPI CARDS
+            ================================================== -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card glass-card">
+
+                    <div class="stat-top">
+
+                        <span class="stat-label">
+                            OVERALL SCORE
+                        </span>
+
+                        <span class="stat-icon blue">
+                            ◈
+                        </span>
+
+                    </div>
+
+                    <div class="stat-value">
+                        <span id="overallScore">--</span>
+                        <small>/100</small>
+                    </div>
+
+                    <div class="stat-footer">
+                        <span class="stat-trend">
+                            ✦ AI evaluated
+                        </span>
+                        Resume quality
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card glass-card">
+
+                    <div class="stat-top">
+
+                        <span class="stat-label">
+                            ATS SCORE
+                        </span>
+
+                        <span class="stat-icon purple">
+                            ◎
+                        </span>
+
+                    </div>
+
+                    <div class="stat-value">
+                        <span id="atsScore">--</span>
+                        <small>/100</small>
+                    </div>
+
+                    <div class="stat-footer">
+                        <span class="stat-trend">
+                            ◈ ATS ready
+                        </span>
+                        Compatibility
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card glass-card">
+
+                    <div class="stat-top">
+
+                        <span class="stat-label">
+                            JOB MATCH
+                        </span>
+
+                        <span class="stat-icon cyan">
+                            ⌁
+                        </span>
+
+                    </div>
+
+                    <div class="stat-value">
+                        <span id="jobMatchPercentage">--</span>
+                    </div>
+
+                    <div class="stat-footer">
+                        <span class="stat-trend">
+                            ◎ Role alignment
+                        </span>
+                        Target position
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card glass-card">
+
+                    <div class="stat-top">
+
+                        <span class="stat-label">
+                            DETECTED SKILLS
+                        </span>
+
+                        <span class="stat-icon pink">
+                            ✦
+                        </span>
+
+                    </div>
+
+                    <div class="stat-value">
+                        <span id="skillCounter">--</span>
+                    </div>
+
+                    <div class="stat-footer">
+                        <span class="stat-trend">
+                            ↗ Extracted
+                        </span>
+                        Technical profile
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 RESUME ANALYSIS
+            ================================================== -->
+
+            <section
+                id="resumeAnalysis"
+                class="analysis-layout"
+            >
+
+                <div class="upload-card glass-card">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <div class="eyebrow">
+                                RESUME ANALYSIS
+                            </div>
+
+                            <h2>
+                                Upload your resume
+                            </h2>
+
+                            <p>
+                                Let AI understand your professional profile.
+                            </p>
+
+                        </div>
+
+                        <div class="heading-icon">
+                            ◈
+                        </div>
+
+                    </div>
+
+
+                    <div class="upload-zone">
+
+                        <div class="upload-icon">
+                            ↑
+                        </div>
+
+                        <h3>
+                            Drop your PDF here
+                        </h3>
+
+                        <p>
+                            or select a file from your computer
+                        </p>
+
+                        <label
+                            for="resumeFile"
+                            class="upload-button"
+                        >
+                            Choose Resume
+                        </label>
+
+                        <input
+                            type="file"
+                            id="resumeFile"
+                            accept=".pdf"
+                            hidden
+                        >
+
+                        <div
+                            id="fileStatus"
+                            class="file-status"
+                        >
+                            No file selected
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="uploadStatus"
+                        class="upload-status"
+                    ></div>
+
+
+                    <button
+                        id="analyzeResumeButton"
+                        class="primary-button"
+                    >
+                        <span>✦</span>
+                        Analyze Resume
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <div class="engine-card glass-card">
+
+                    <div class="section-heading compact">
+
+                        <div>
+
+                            <div class="eyebrow">
+                                ANALYSIS ENGINE
+                            </div>
+
+                            <h2>
+                                Resume intelligence
+                            </h2>
+
+                        </div>
+
+                        <div class="engine-live">
+                            <span></span>
+                            LIVE
+                        </div>
+
+                    </div>
+
+
+                    <div class="engine-list">
+
+                        <div class="engine-row">
+
+                            <div class="engine-row-left">
+
+                                <div class="engine-icon">
+                                    ✓
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Content extraction
+                                    </strong>
+
+                                    <span>
+                                        Resume text & structure
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="engine-check">
+                                ✓
+                            </div>
+
+                        </div>
+
+
+                        <div class="engine-row">
+
+                            <div class="engine-row-left">
+
+                                <div class="engine-icon">
+                                    ◈
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Skill detection
+                                    </strong>
+
+                                    <span>
+                                        Technical & soft skills
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="engine-check">
+                                ✓
+                            </div>
+
+                        </div>
+
+
+                        <div class="engine-row">
+
+                            <div class="engine-row-left">
+
+                                <div class="engine-icon">
+                                    ◎
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        ATS evaluation
+                                    </strong>
+
+                                    <span>
+                                        Keyword & structure analysis
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="engine-check">
+                                ✓
+                            </div>
+
+                        </div>
+
+
+                        <div class="engine-row">
+
+                            <div class="engine-row-left">
+
+                                <div class="engine-icon">
+                                    ✦
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        AI reasoning
+                                    </strong>
+
+                                    <span>
+                                        Personalized career insights
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="engine-ai">
+                                AI
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 SCORE + SKILLS
+            ================================================== -->
+
+            <section class="insights-layout">
+
+                <div class="score-card glass-card">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <div class="eyebrow">
+                                PERFORMANCE
+                            </div>
+
+                            <h2>
+                                Score breakdown
+                            </h2>
+
+                            <p id="scoreProgressText">
+                                Waiting for resume analysis
+                            </p>
+
+                        </div>
+
+                        <div class="score-mini">
+                            <span>✦</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="score-list">
+
+                        <div class="score-item">
+
+                            <div class="score-item-header">
+
+                                <span>
+                                    Education
+                                </span>
+
+                                <strong id="breakdownEducation">
+                                    --%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-track">
+                                <div
+                                    id="educationProgress"
+                                    class="progress-bar blue-progress"
+                                ></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="score-item">
+
+                            <div class="score-item-header">
+
+                                <span>
+                                    Experience
+                                </span>
+
+                                <strong id="breakdownExperience">
+                                    --%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-track">
+                                <div
+                                    id="experienceProgress"
+                                    class="progress-bar purple-progress"
+                                ></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="score-item">
+
+                            <div class="score-item-header">
+
+                                <span>
+                                    Projects
+                                </span>
+
+                                <strong id="breakdownProjects">
+                                    --%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-track">
+                                <div
+                                    id="projectsProgress"
+                                    class="progress-bar cyan-progress"
+                                ></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="score-item">
+
+                            <div class="score-item-header">
+
+                                <span>
+                                    Skills
+                                </span>
+
+                                <strong id="breakdownSkills">
+                                    --%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-track">
+                                <div
+                                    id="skillsProgress"
+                                    class="progress-bar pink-progress"
+                                ></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="skillsSection"
+                    class="skills-card glass-card"
+                >
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <div class="eyebrow">
+                                SKILL INTELLIGENCE
+                            </div>
+
+                            <h2>
+                                Detected skills
+                            </h2>
+
+                            <p>
+                                Skills extracted from your resume.
+                            </p>
+
+                        </div>
+
+                        <div class="skill-count">
+                            <span id="skillCountHeader">
+                                0 skills
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="detectedSkills"
+                        class="skills-container"
+                    >
+
+                        <div class="skills-empty">
+                            Analyze your resume to detect skills.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 JOB MATCHER
+            ================================================== -->
+
+            <section
+                id="jobMatcher"
+                class="job-matcher glass-card"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <div class="eyebrow">
+                            CAREER MATCHING
+                        </div>
+
+                        <h2>
+                            Match your resume to a job
+                        </h2>
+
+                        <p>
+                            Compare your resume against a target job description.
+                        </p>
+
+                    </div>
+
+                    <div class="matcher-badge">
+                        <span>✦</span>
+                        AI MATCH ENGINE
+                    </div>
+
+                </div>
+
+
+                <div class="job-grid">
+
+                    <div class="job-input-area">
+
+                        <label for="jobDescription">
+                            JOB DESCRIPTION
+                        </label>
+
+                        <textarea
+                            id="jobDescription"
+                            placeholder="Paste the job description here..."
+                        ></textarea>
+
+                        <div class="input-footer">
+
+                            <span>
+                                AI will identify relevant skills and keywords.
+                            </span>
+
+                            <button
+                                id="analyzeJobButton"
+                                class="primary-button small"
+                            >
+                                <span>✦</span>
+                                Analyze Job Match
+                                <span>→</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="match-result">
+
+                        <div class="match-ring-container">
+
+                            <div
+                                id="scoreRing"
+                                class="score-ring"
+                            >
+
+                                <div class="score-ring-inner">
+
+                                    <span id="matchScore">
+                                        --%
+                                    </span>
+
+                                    <small>
+                                        MATCH
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="match-copy">
+
+                            <h3>
+                                Job compatibility
+                            </h3>
+
+                            <p id="matchMessage">
+                                Analyze a job description to see your compatibility.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skills-match-grid">
+
+                    <div class="skill-match-panel matching-panel">
+
+                        <div class="panel-heading">
+
+                            <div>
+
+                                <span class="panel-dot"></span>
+
+                                Matching skills
+
+                            </div>
+
+                            <strong id="matchingCount">
+                                0
+                            </strong>
+
+                        </div>
+
+                        <div
+                            id="matchingSkills"
+                            class="skills-container"
+                        >
+
+                            <div class="skills-empty">
+                                No analysis yet.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-match-panel missing-panel">
+
+                        <div class="panel-heading">
+
+                            <div>
+
+                                <span class="panel-dot"></span>
+
+                                Missing skills
+
+                            </div>
+
+                            <strong id="missingCount">
+                                0
+                            </strong>
+
+                        </div>
+
+                        <div
+                            id="missingSkills"
+                            class="skills-container"
+                        >
+
+                            <div class="skills-empty">
+                                No analysis yet.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 AI INTERVIEW PREPARATION
+            ================================================== -->
+
+            <section
+                id="interviewPrep"
+                class="glass-card"
+                style="margin-top:32px;"
+            >
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">
+                            AI INTERVIEW COACH
+                        </div>
+                        <h2>
+                            AI Interview Preparation
+                        </h2>
+                        <p>
+                            Generate personalized interview questions from your resume and target job.
+                        </p>
+                    </div>
+
+                    <div class="matcher-badge">
+                        <span>◉</span>
+                        INTERVIEW PREP
+                    </div>
+                </div>
+
+                <div
+                    style="
+                        display:flex;
+                        align-items:center;
+                        justify-content:space-between;
+                        gap:16px;
+                        flex-wrap:wrap;
+                        margin-top:24px;
+                    "
+                >
+                    <div>
+                        <strong style="font-size:15px;">
+                            Prepare for your next interview
+                        </strong>
+
+                        <div
+                            style="
+                                margin-top:6px;
+                                font-size:12px;
+                                color:rgba(255,255,255,0.50);
+                            "
+                        >
+                            Questions will be based on your resume and job description.
+                        </div>
+                    </div>
+
+                    <button
+                        id="generateInterviewButton"
+                        class="primary-button small"
+                        type="button"
+                    >
+                        <span>✦</span>
+                        Generate Interview Questions
+                        <span>→</span>
+                    </button>
+                </div>
+
+                <div
+                    id="interviewPrepResults"
+                    style="
+                        margin-top:24px;
+                        display:none;
+                    "
+                ></div>
+            </section>
+
+            <!-- =================================================
+                 AI MOCK INTERVIEW
+            ================================================== -->
+
+            <section
+                id="mockInterview"
+                class="glass-card"
+                style="margin-top:32px;"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <div class="eyebrow">
+                            AI MOCK INTERVIEW
+                        </div>
+
+                        <h2>
+                            Mock Interview Mode
+                        </h2>
+
+                        <p>
+                            Practice a real interview with your AI career coach.
+                        </p>
+
+                    </div>
+
+                    <div class="matcher-badge">
+                        <span>◉</span>
+                        LIVE PRACTICE
+                    </div>
+
+                </div>
+
+                <div
+                    style="
+                        margin-top:24px;
+                        padding:22px;
+                        border-radius:16px;
+                        background:rgba(255,255,255,0.04);
+                    "
+                >
+
+                    <strong style="font-size:15px;">
+                        Ready for your interview?
+                    </strong>
+
+                    <div
+                        style="
+                            margin-top:8px;
+                            font-size:12px;
+                            color:rgba(255,255,255,0.50);
+                        "
+                    >
+                        ResumeAI will ask you one question at a time
+                        and evaluate your answers.
+                    </div>
+
+                    <button
+                        id="startMockInterviewButton"
+                        class="primary-button small"
+                        type="button"
+                        style="margin-top:18px;"
+                    >
+                        <span>🎤</span>
+                        Start Mock Interview
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+                <div
+                    id="mockInterviewArea"
+                    style="
+                        margin-top:24px;
+                        display:none;
+                    "
+                ></div>
+
+            </section>
+
+
+            <!-- =================================================
+                 AI INSIGHTS
+            ================================================== -->
+
+            <section
+                id="aiInsights"
+                class="ai-section glass-card"
+            >
+
+                <div class="ai-section-header">
+
+                    <div>
+
+                        <div class="eyebrow">
+                            AI CAREER INTELLIGENCE
+                        </div>
+
+                        <h2>
+                            AI Insights
+                        </h2>
+
+                        <p>
+                            Personalized recommendations generated from your resume and target role.
+                        </p>
+
+                    </div>
+
+
+                    <div class="ai-live-status">
+
+                        <span class="ai-live-dot"></span>
+
+                        LIVE AI
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="aiInsightsGrid"
+                    class="ai-insights-grid"
+                >
+
+                    <div class="ai-empty-state">
+
+                        <div class="ai-empty-icon">
+                            ✦
+                        </div>
+
+                        <h3>
+                            AI insights are ready
+                        </h3>
+
+                        <p>
+                            Analyze your resume to generate personalized career intelligence.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ai-action-row">
+
+                    <button
+                        id="aiSuggestionsButton"
+                        class="primary-button ai-button"
+                        onclick="getAISuggestions()"
+                    >
+                        <span>✦</span>
+                        Generate AI Suggestions
+                        <span>→</span>
+                    </button>
+
+                    <span class="ai-action-note">
+                        Uses your resume + target job description
+                    </span>
+
+                </div>
+
+
+                <!-- =================================================
+                     AI RESUME REWRITE
+                ================================================== -->
+
+                <div
+                    id="resumeRewrite"
+                    style="
+                        margin-top: 32px;
+                        padding-top: 28px;
+                        border-top: 1px solid rgba(255,255,255,0.08);
+                    "
+                >
+
+                    <div class="ai-section-header">
+
+                        <div>
+
+                            <div class="eyebrow">
+                                AI RESUME OPTIMIZER
+                            </div>
+
+                            <h2>
+                                AI Resume Rewrite
+                            </h2>
+
+                            <p>
+                                Transform your existing resume into a cleaner,
+                                professional and ATS-friendly version.
+                            </p>
+
+                        </div>
+
+
+                        <div class="ai-live-status">
+
+                            <span class="ai-live-dot"></span>
+
+                            AI POWERED
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- REWRITE INTRO CARD -->
+
+                    <div
+                        class="premium-ai-card summary"
+                        style="
+                            margin-top: 22px;
+                            border: 1px solid rgba(91,124,255,0.18);
+                            box-shadow:
+                                0 0 20px rgba(91,124,255,0.05),
+                                inset 0 0 25px rgba(139,92,246,0.025);
+                        "
+                    >
+
+                        <div class="premium-ai-card-header">
+
+                            <div class="premium-ai-icon">
+                                ✎
+                            </div>
+
+                            <div>
+
+                                <span class="premium-ai-label">
+                                    RESUME OPTIMIZER
+                                </span>
+
+                                <h3>
+                                    Rewrite your resume with AI
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <p class="ai-summary-text">
+                            ResumeAI will improve wording, structure,
+                            professional summaries and bullet points
+                            while preserving your original facts.
+                        </p>
+
+                    </div>
+
+
+                    <!-- REWRITE ACTION -->
+
+                    <div
+                        class="ai-action-row"
+                        style="margin-top: 20px;"
+                    >
+
+                        <button
+                            id="rewriteResumeButton"
+                            class="primary-button ai-button"
+                            onclick="rewriteResume()"
+                        >
+                            <span>✦</span>
+                            Rewrite My Resume
+                            <span>→</span>
+                        </button>
+
+                        <span
+                            id="rewriteStatus"
+                            class="ai-action-note"
+                        ></span>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         REWRITE RESULT
+                    ================================================== -->
+
+                    <div
+                        id="rewriteResult"
+                        class="premium-ai-card summary"
+                        style="
+                            display: none;
+                            margin-top: 24px;
+                            border: 1px solid rgba(91,124,255,0.35);
+                            box-shadow:
+                                0 0 25px rgba(91,124,255,0.12),
+                                0 0 60px rgba(139,92,246,0.04),
+                                inset 0 0 30px rgba(139,92,246,0.04);
+                        "
+                    >
+
+                        <!-- RESULT HEADER -->
+
+                        <div
+                            class="premium-ai-card-header"
+                            style="
+                                align-items: flex-start;
+                                gap: 14px;
+                            "
+                        >
+
+                            <div class="premium-ai-icon">
+                                ✦
+                            </div>
+
+                            <div style="flex:1;">
+
+                                <span class="premium-ai-label">
+                                    AI GENERATED
+                                </span>
+
+                                <h3>
+                                    Improved Resume
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                id="copyRewriteButton"
+                                class="primary-button small"
+                                onclick="copyRewrittenResume()"
+                                style="
+                                    margin-left: auto;
+                                    white-space: nowrap;
+                                "
+                            >
+                                <span>⧉</span>
+                                Copy Resume
+                                <span>→</span>
+                            </button>
+
+                            <button
+                                id="downloadRewriteButton"
+                                class="primary-button small"
+                                onclick="downloadRewrittenResume()"
+                                style="white-space: nowrap;"
+                            >
+                                <span>↓</span>
+                                Download PDF
+                                <span>→</span>
+                            </button>
+
+                        </div>
+
+
+                        <!-- RESULT DESCRIPTION -->
+
+                        <p
+                            class="ai-summary-text"
+                            style="
+                                margin-top: 12px;
+                            "
+                        >
+                            Your resume has been rewritten using AI while
+                            keeping the information provided in your original resume.
+                        </p>
+
+
+                        <!-- PROFESSIONAL RESUME PREVIEW -->
+
+                        <div
+                            style="
+                                margin-top: 22px;
+                                padding: 2px;
+                                border-radius: 18px;
+                                background:
+                                    linear-gradient(
+                                        135deg,
+                                        rgba(91,124,255,0.30),
+                                        rgba(139,92,246,0.18),
+                                        rgba(0,229,255,0.12)
+                                    );
+                                box-shadow:
+                                    0 0 25px rgba(91,124,255,0.08);
+                            "
+                        >
+
+                            <div
+                                style="
+                                    background: rgba(7,10,24,0.96);
+                                    border-radius: 16px;
+                                    padding: 26px;
+                                    box-shadow:
+                                        inset 0 0 35px rgba(91,124,255,0.025);
+                                "
+                            >
+
+                                <div
+                                    style="
+                                        display:flex;
+                                        align-items:center;
+                                        justify-content:space-between;
+                                        gap:12px;
+                                        margin-bottom:18px;
+                                        padding-bottom:16px;
+                                        border-bottom:1px solid rgba(255,255,255,0.08);
+                                    "
+                                >
+
+                                    <div>
+
+                                        <div
+                                            style="
+                                                font-size:11px;
+                                                letter-spacing:2px;
+                                                color:rgba(130,160,255,0.85);
+                                                font-weight:700;
+                                            "
+                                        >
+                                            RESUME PREVIEW
+                                        </div>
+
+                                        <div
+                                            style="
+                                                margin-top:5px;
+                                                font-size:12px;
+                                                color:rgba(255,255,255,0.42);
+                                            "
+                                        >
+                                            AI optimized document
+                                        </div>
+
+                                    </div>
+
+
+                                    <div
+                                        style="
+                                            display:flex;
+                                            align-items:center;
+                                            gap:7px;
+                                            font-size:11px;
+                                            letter-spacing:1px;
+                                            color:#5cffb0;
+                                            white-space:nowrap;
+                                        "
+                                    >
+                                        <span
+                                            style="
+                                                width:7px;
+                                                height:7px;
+                                                border-radius:50%;
+                                                background:#5cffb0;
+                                                box-shadow:0 0 10px #5cffb0;
+                                            "
+                                        ></span>
+
+                                        READY
+                                    </div>
+
+                                </div>
+
+
+                                <!--
+                                    IMPORTANT:
+                                    The AI output is inserted here exactly
+                                    as returned by the backend.
+                                -->
+
+                                <pre
+                                    id="rewrittenResumeText"
+                                    style="
+                                        margin:0;
+                                        white-space:pre-wrap;
+                                        word-break:break-word;
+                                        overflow-wrap:anywhere;
+                                        font-family:
+                                            Inter,
+                                            -apple-system,
+                                            BlinkMacSystemFont,
+                                            'Segoe UI',
+                                            sans-serif;
+                                        font-size:14px;
+                                        line-height:1.8;
+                                        letter-spacing:0.01em;
+                                        color:rgba(245,247,255,0.88);
+                                        background:rgba(0,0,0,0.18);
+                                        border:1px solid rgba(255,255,255,0.06);
+                                        border-radius:14px;
+                                        padding:22px;
+                                        max-height:720px;
+                                        overflow-y:auto;
+                                        "
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- COPY INFORMATION -->
+
+                        <div
+                            style="
+                                display:flex;
+                                justify-content:flex-end;
+                                align-items:center;
+                                margin-top:14px;
+                                gap:12px;
+                                flex-wrap:wrap;
+                            "
+                        >
+
+                            <span
+                                style="
+                                    font-size:12px;
+                                    color:rgba(255,255,255,0.38);
+                                "
+                            >
+                                Copy the improved resume and use it for applications.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+
+            <!-- =================================================
+                 PROFESSIONAL PROFILE LINKS
+            ================================================== -->
+
+            <section
+                id="professionalProfiles"
+                class="glass-card"
+                style="margin-top:32px;"
+            >
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">
+                            PROFESSIONAL IDENTITY
+                        </div>
+                        <h2>
+                            Professional Profile Links
+                        </h2>
+                        <p>
+                            Connect your professional profiles and portfolio.
+                        </p>
+                    </div>
+
+                    <div class="matcher-badge">
+                        <span>🔗</span>
+                        PROFILE LINKS
+                    </div>
+                </div>
+
+                <div
+                    style="
+                        display:grid;
+                        grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+                        gap:14px;
+                        margin-top:24px;
+                    "
+                >
+                    <a
+                        href="https://www.linkedin.com/in/k-jagadeesh-a36580401/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="
+                            text-decoration:none;
+                            color:inherit;
+                            padding:18px;
+                            border:1px solid rgba(255,255,255,0.10);
+                            border-radius:14px;
+                            background:rgba(255,255,255,0.04);
+                        "
+                    >
+                        <strong>🔗 LinkedIn</strong>
+                        <div style="margin-top:6px;color:rgba(255,255,255,0.50);font-size:12px;">
+                            Professional profile
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://github.com/kuttyjaga21"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="
+                            text-decoration:none;
+                            color:inherit;
+                            padding:18px;
+                            border:1px solid rgba(255,255,255,0.10);
+                            border-radius:14px;
+                            background:rgba(255,255,255,0.04);
+                        "
+                    >
+                        <strong>💻 GitHub</strong>
+                        <div style="margin-top:6px;color:rgba(255,255,255,0.50);font-size:12px;">
+                            Projects & code
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://kuttyjaga21.github.io/jagadeesh-portfolio/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="
+                            text-decoration:none;
+                            color:inherit;
+                            padding:18px;
+                            border:1px solid rgba(255,255,255,0.10);
+                            border-radius:14px;
+                            background:rgba(255,255,255,0.04);
+                        "
+                    >
+                        <strong>🌐 Portfolio</strong>
+                        <div style="margin-top:6px;color:rgba(255,255,255,0.50);font-size:12px;">
+                            Personal website
+                        </div>
+                    </a>
+
+                    <a
+                        href="mailto:kuttyjaga21@gmail.com"
+                        style="
+                            text-decoration:none;
+                            color:inherit;
+                            padding:18px;
+                            border:1px solid rgba(255,255,255,0.10);
+                            border-radius:14px;
+                            background:rgba(255,255,255,0.04);
+                        "
+                    >
+                        <strong>✉️ Email</strong>
+                        <div style="margin-top:6px;color:rgba(255,255,255,0.50);font-size:12px;">
+                            Contact me
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- =================================================
+                 AI COVER LETTER GENERATOR
+            ================================================== -->
+
+            <section
+                id="coverLetter"
+                class="glass-card"
+                style="margin-top:32px;"
+            >
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">
+                            AI CAREER WRITER
+                        </div>
+                        <h2>
+                            AI Cover Letter Generator
+                        </h2>
+                        <p>
+                            Create a tailored cover letter using your resume and target job description.
+                        </p>
+                    </div>
+
+                    <div class="matcher-badge">
+                        <span>✉</span>
+                        AI COVER LETTER
+                    </div>
+                </div>
+
+                <div style="margin-top:24px;">
+
+                    <label
+                        for="coverLetterTone"
+                        style="
+                            display:block;
+                            margin-bottom:10px;
+                            font-size:12px;
+                            font-weight:700;
+                            letter-spacing:0.08em;
+                            color:rgba(255,255,255,0.58);
+                        "
+                    >
+                        CHOOSE COVER LETTER TONE
+                    </label>
+
+                    <div
+                        style="
+                            display:grid;
+                            grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+                            gap:12px;
+                        "
+                    >
+
+                        <label
+                            style="
+                                display:flex;
+                                align-items:center;
+                                gap:10px;
+                                padding:14px 16px;
+                                border:1px solid rgba(255,255,255,0.08);
+                                border-radius:12px;
+                                background:rgba(255,255,255,0.03);
+                                cursor:pointer;
+                            "
+                        >
+                            <input
+                                type="radio"
+                                name="coverLetterTone"
+                                value="Professional"
+                                checked
+                            >
+                            <span>
+                                👔 Professional
+                            </span>
+                        </label>
+
+                        <label
+                            style="
+                                display:flex;
+                                align-items:center;
+                                gap:10px;
+                                padding:14px 16px;
+                                border:1px solid rgba(255,255,255,0.08);
+                                border-radius:12px;
+                                background:rgba(255,255,255,0.03);
+                                cursor:pointer;
+                            "
+                        >
+                            <input
+                                type="radio"
+                                name="coverLetterTone"
+                                value="Confident"
+                            >
+                            <span>
+                                💪 Confident
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <div
+                        style="
+                            margin-top:20px;
+                            display:flex;
+                            justify-content:flex-end;
+                        "
+                    >
+                        <button
+                            id="generateCoverLetterButton"
+                            class="primary-button"
+                            onclick="generateCoverLetter()"
+                        >
+                            <span>✦</span>
+                            Generate Cover Letter
+                            <span>→</span>
+                        </button>
+                    </div>
+
+                    <div
+                        id="coverLetterResult"
+                        style="
+                            display:none;
+                            margin-top:24px;
+                        "
+                    >
+
+                        <div class="premium-ai-card">
+
+                            <div
+                                class="premium-ai-card-header"
+                            >
+                                <div class="premium-ai-icon">
+                                    ✉
+                                </div>
+
+                                <div style="flex:1;">
+                                    <span class="premium-ai-label">
+                                        AI GENERATED
+                                    </span>
+                                    <h3>
+                                        Your Cover Letter
+                                    </h3>
+                                </div>
+
+                                <button
+                                    id="copyCoverLetterButton"
+                                    class="primary-button small"
+                                    onclick="copyCoverLetter()"
+                                >
+                                    <span>⧉</span>
+                                    Copy
+                                </button>
+
+                                <button
+                                    id="downloadCoverLetterButton"
+                                    class="primary-button small"
+                                    onclick="downloadCoverLetterPDF()"
+                                >
+                                    <span>↓</span>
+                                    PDF
+                                </button>
+                            </div>
+
+                            <div
+                                id="coverLetterText"
+                                style="
+                                    margin-top:18px;
+                                    white-space:pre-wrap;
+                                    word-break:break-word;
+                                    overflow-wrap:anywhere;
+                                    font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+                                    font-size:14px;
+                                    line-height:1.8;
+                                    color:rgba(245,247,255,0.88);
+                                    background:rgba(0,0,0,0.18);
+                                    border:1px solid rgba(255,255,255,0.06);
+                                    border-radius:14px;
+                                    padding:22px;
+                                "
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- =================================================
+                 RESUME HISTORY
+            ================================================== -->
+
+            <section
+                id="resumeHistory"
+                class="ai-section glass-card"
+            >
+
+                <div class="ai-section-header">
+
+                    <div>
+                        <div class="eyebrow">
+                            RESUME WORKSPACE
+                        </div>
+
+                        <h2>
+                            Resume History
+                        </h2>
+
+                        <p>
+                            Your recent AI resume rewrites are saved locally on this device.
+                        </p>
+                    </div>
+
+                    <div class="ai-live-status">
+                        <span class="ai-live-dot"></span>
+                        LOCAL STORAGE
+                    </div>
+
+                </div>
+
+                <div
+                    id="resumeHistoryList"
+                    class="ai-insights-grid"
+                    style="margin-top:22px;"
+                >
+                    <div class="ai-empty-state">
+                        <div class="ai-empty-icon">◷</div>
+                        <h3>No resume history yet</h3>
+                        <p>Rewrite your resume to automatically save a version here.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="
+                        display:flex;
+                        justify-content:flex-end;
+                        margin-top:18px;
+                    "
+                >
+                    <button
+                        class="primary-button small"
+                        onclick="clearResumeHistory()"
+                    >
+                        <span>⌫</span>
+                        Clear History
+                    </button>
+                </div>
+
+            </section>
+
+            <!-- =================================================
+                 RECOMMENDATIONS
+            ================================================== -->
+
+            <section
+                id="recommendations"
+                class="recommendation-layout"
+            >
+
+                <div class="recommendation-card glass-card">
+
+                    <div class="recommendation-header">
+
+                        <div class="recommendation-icon success">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <div class="eyebrow">
+                                POSITIVE SIGNALS
+                            </div>
+
+                            <h2>
+                                Resume strengths
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <ul
+                        id="strengthsList"
+                        class="recommendation-list"
+                    >
+
+                        <li>
+                            <span>01</span>
+                            Analyze your resume to discover strengths.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="recommendation-card glass-card">
+
+                    <div class="recommendation-header">
+
+                        <div class="recommendation-icon warning">
+                            ↗
+                        </div>
+
+                        <div>
+
+                            <div class="eyebrow">
+                                OPTIMIZATION
+                            </div>
+
+                            <h2>
+                                Areas to improve
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <ul
+                        id="improvementsList"
+                        class="recommendation-list"
+                    >
+
+                        <li>
+                            <span>01</span>
+                            Analyze your resume to discover improvements.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+            <!-- Hidden legacy AI container -->
+
+            <div
+                id="recommendationsList"
+                style="display:none;"
+            ></div>
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+
+            <footer class="dashboard-footer">
+
+                <div>
+                    <span class="footer-logo">
+                        ✦
+                    </span>
+
+                    ResumeAI
+                </div>
+
+                <span>
+                    AI-powered career intelligence
+                </span>
+
+                <span>
+                    © 2026 ResumeAI
+                </span>
+
+            </footer>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     TOAST
+========================================================== -->
+
+<div
+    id="toast"
+    class="toast"
+>
+
+    <span class="toast-icon">
+        ✦
+    </span>
+
+    <span id="toastMessage">
+        Ready
+    </span>
+
+</div>
+
+
+<!-- =========================================================
+     EXISTING JAVASCRIPT
+========================================================== -->
+
+<script src="script.js"></script>
+
+
+<!-- =========================================================
+     AI RESUME REWRITE JAVASCRIPT
+========================================================== -->
+
+<script>
+
+
+function renderResumeMarkdown(markdown) {
+    const escapeHTML = function (text) {
+        return text
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    };
+
+    const lines = markdown.split(/\r?\n/);
+    const html = [];
+    let inList = false;
+
+    function closeList() {
+        if (inList) {
+            html.push("</ul>");
+            inList = false;
+        }
+    }
+
+    function inlineFormat(text) {
+        let value = escapeHTML(text);
+
+        value = value.replace(
+            /\*\*(.+?)\*\*/g,
+            "<strong>$1</strong>"
+        );
+
+        value = value.replace(
+            /(https?:\/\/[^\s<]+)/g,
+            '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+        );
+
+        return value;
+    }
+
+    lines.forEach(function (line) {
+        const trimmed = line.trim();
+
+        if (!trimmed) {
+            closeList();
+            return;
+        }
+
+        if (trimmed.startsWith("# ")) {
+            closeList();
+            html.push(
+                '<h1 class="resume-md-name">' +
+                inlineFormat(trimmed.substring(2)) +
+                "</h1>"
+            );
+            return;
+        }
+
+        if (trimmed.startsWith("## ")) {
+            closeList();
+            html.push(
+                '<h2 class="resume-md-section">' +
+                inlineFormat(trimmed.substring(3)) +
+                "</h2>"
+            );
+            return;
+        }
+
+        if (trimmed.startsWith("### ")) {
+            closeList();
+            html.push(
+                '<h3 class="resume-md-subsection">' +
+                inlineFormat(trimmed.substring(4)) +
+                "</h3>"
+            );
+            return;
+        }
+
+        if (trimmed.startsWith("- ")) {
+            if (!inList) {
+                html.push("<ul>");
+                inList = true;
+            }
+
+            html.push(
+                "<li>" +
+                inlineFormat(trimmed.substring(2)) +
+                "</li>"
+            );
+            return;
+        }
+
+        closeList();
+
+        html.push(
+            '<p class="resume-md-paragraph">' +
+            inlineFormat(trimmed) +
+            "</p>"
+        );
+    });
+
+    closeList();
+
+    return html.join("");
+}
+
+async function rewriteResume() {
+
+    const button =
+        document.getElementById(
+            "rewriteResumeButton"
+        );
+
+    const status =
+        document.getElementById(
+            "rewriteStatus"
+        );
+
+    const result =
+        document.getElementById(
+            "rewriteResult"
+        );
+
+    const output =
+        document.getElementById(
+            "rewrittenResumeText"
+        );
+
+
+    /*
+     * resumeText comes from script.js.
+     *
+     * It contains the text extracted from
+     * the uploaded resume after analysis.
+     */
+
+    if (
+        typeof resumeText === "undefined" ||
+        !resumeText
+    ) {
+
+        status.textContent =
+            "Analyze your resume first.";
+
+        status.style.color =
+            "#ff6b8a";
+
+        return;
+    }
+
+
+    /*
+     * Get the optional target job description.
+     */
+
+    const jobField =
+        document.getElementById(
+            "jobDescription"
+        );
+
+    const jobText =
+        jobField
+            ? jobField.value.trim()
+            : "";
+
+
+    /*
+     * Loading state.
+     */
+
+    button.disabled = true;
+
+    button.innerHTML =
+        "<span>✦</span> AI is rewriting...";
+
+
+    status.textContent =
+        "Generating your improved resume...";
+
+    status.style.color =
+        "";
+
+
+    try {
+
+        const response =
+            await fetch(
+                `${API_URL}/rewrite-resume`,
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body: JSON.stringify({
+
+                        resume_text:
+                            resumeText,
+
+                        job_description:
+                            jobText
+
+                    })
+
+                }
+            );
+
+
+        const data =
+            await response.json();
+
+
+        /*
+         * Handle backend errors.
+         */
+
+        if (!response.ok) {
+
+            throw new Error(
+                data.error ||
+                "Resume rewrite failed"
+            );
+
+        }
+
+
+        /*
+         * Make sure the backend returned
+         * the rewritten resume.
+         */
+
+        if (!data.rewritten_resume) {
+
+            throw new Error(
+                "No rewritten resume was returned"
+            );
+
+        }
+
+
+        /*
+         * IMPORTANT:
+         *
+         * Do NOT modify, clean, parse or
+         * rewrite the AI response.
+         *
+         * textContent displays the exact
+         * content returned by the backend.
+         */
+
+        output.innerHTML =
+            renderResumeMarkdown(data.rewritten_resume);
+
+
+        /*
+         * Show result card.
+         */
+
+        result.style.display =
+            "block";
+
+
+        /*
+         * Success message.
+         */
+
+        status.textContent =
+            "✓ Resume rewritten successfully";
+
+        saveResumeHistory(data.rewritten_resume);
+
+        status.style.color =
+            "#5cffb0";
+
+
+        /*
+         * Scroll to the generated resume.
+         */
+
+        result.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "start"
+
+        });
+
+
+    } catch (error) {
+
+        console.error(
+            "REWRITE ERROR:",
+            error
+        );
+
+
+        status.textContent =
+            "AI Resume Rewrite failed: " +
+            error.message;
+
+        status.style.color =
+            "#ff6b8a";
+
+    } finally {
+
+        /*
+         * Restore button.
+         */
+
+        button.disabled = false;
+
+        button.innerHTML =
+            "<span>✦</span> Rewrite My Resume <span>→</span>";
+
+    }
+
+}
+
+
+/*
+ * =========================================================
+ * COPY REWRITTEN RESUME
+ * =========================================================
+ */
+
+function copyRewrittenResume() {
+
+    const output =
+        document.getElementById(
+            "rewrittenResumeText"
+        );
+
+
+    const button =
+        document.getElementById(
+            "copyRewriteButton"
+        );
+
+
+    if (
+        !output ||
+        !output.textContent
+    ) {
+
+        return;
+
+    }
+
+
+    const resume =
+        output.textContent;
+
+
+    /*
+     * Modern clipboard API.
+     */
+
+    navigator.clipboard
+        .writeText(resume)
+
+        .then(function () {
+
+            const originalHTML =
+                button.innerHTML;
+
+
+            button.innerHTML =
+                "<span>✓</span> Copied";
+
+
+            button.style.boxShadow =
+                "0 0 20px rgba(92,255,176,0.25)";
+
+
+            setTimeout(
+                function () {
+
+                    button.innerHTML =
+                        originalHTML;
+
+                    button.style.boxShadow =
+                        "";
+
+                },
+                1800
+            );
+
+        })
+
+        .catch(function (error) {
+
+            console.error(
+                "COPY ERROR:",
+                error
+            );
+
+
+            /*
+             * Fallback for browsers where
+             * navigator.clipboard is unavailable.
+             */
+
+            const textarea =
+                document.createElement(
+                    "textarea"
+                );
+
+
+            textarea.value =
+                resume;
+
+
+            textarea.style.position =
+                "fixed";
+
+            textarea.style.opacity =
+                "0";
+
+
+            document.body.appendChild(
+                textarea
+            );
+
+
+            textarea.select();
+
+
+            try {
+
+                document.execCommand(
+                    "copy"
+                );
+
+
+                const originalHTML =
+                    button.innerHTML;
+
+
+                button.innerHTML =
+                    "<span>✓</span> Copied";
+
+
+                setTimeout(
+                    function () {
+
+                        button.innerHTML =
+                            originalHTML;
+
+                    },
+                    1800
+                );
+
+            } catch (fallbackError) {
+
+                console.error(
+                    "COPY FALLBACK ERROR:",
+                    fallbackError
+                );
+
+            }
+
+
+            document.body.removeChild(
+                textarea
+            );
+
+        });
+
+}
+
+function downloadRewrittenResume() {
+
+    const output =
+        document.getElementById(
+            "rewrittenResumeText"
+        );
+
+    const button =
+        document.getElementById(
+            "downloadRewriteButton"
+        );
+
+    if (!output || !output.textContent.trim()) {
+        return;
+    }
+
+    const resume = output.textContent;
+
+    const printWindow = window.open(
+        "",
+        "_blank"
+    );
+
+    if (!printWindow) {
+        alert("Please allow pop-ups to download the PDF.");
+        return;
+    }
+
+    printWindow.document.write(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>K. Jagadeesh - Resume</title>
+            <style>
+                @page {
+                    size: A4;
+                    margin: 18mm;
+                }
+
+                * {
+                    box-sizing: border-box;
+                }
+
+                body {
+                    margin: 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #111827;
+                    background: #ffffff;
+                }
+
+                .resume {
+                    width: 100%;
+                    white-space: pre-wrap;
+                    overflow-wrap: break-word;
+                    font-size: 11px;
+                    line-height: 1.55;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="resume">${escapeHTML(resume)}</div>
+        </body>
+        </html>
+    `);
+
+    printWindow.document.close();
+
+    printWindow.onload = function () {
+        printWindow.focus();
+        printWindow.print();
+    };
+
+    const originalHTML = button.innerHTML;
+
+    button.innerHTML =
+        "<span>✓</span> PDF Ready";
+
+    setTimeout(function () {
+        button.innerHTML = originalHTML;
+    }, 1800);
+}
+
+</script>
+
+</body>
+</html>
