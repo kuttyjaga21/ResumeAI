@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://resumeai-tmw1.onrender.com";
 
 let selectedFile = null;
 let resumeText = "";
@@ -2122,7 +2122,7 @@ async function generateCoverLetter() {
 
     try {
         const response = await fetch(
-            "http://127.0.0.1:5000/generate-cover-letter",
+            "https://resumeai-tmw1.onrender.com/generate-cover-letter",
             {
                 method: "POST",
                 headers: {
